@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rathore Tiffin Services - Fresh, homemade lunch and dinner tiffin delivery. Order healthy meals daily with vegetarian, non-vegetarian, and diet-friendly options.">
+    <meta name="keywords" content="Tiffin Service, Lunch & Dinner Delivery, Healthy Meals in [Your City], Rathore Tiffin Services">
+    <title>Rathore Tiffin Services - Fresh Tiffin Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 {
+            color: #ff6600;
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('placeholder-hero-image.jpg'); /* Placeholder: High-quality food image */
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .btn {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #e55a00;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about, .menu, .pricing, .testimonials, .contact {
+            text-align: center;
+        }
+        .about h2, .menu h2, .pricing h2, .testimonials h2, .contact h2 {
+            color: #ff6600;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .menu-item {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            margin: 15px;
+            color: #333;
+        }
+        .pricing-plans {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .plan {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            margin: 10px;
+        }
+        .plan h3 {
+            color: #ff6600;
+        }
+        .plan ul {
+            list-style: none;
+            padding: 0;
+        }
+        .plan ul li {
+            margin: 10px 0;
+        }
+        .testimonials {
+            background-color: #fff;
+        }
+        .testimonial {
+            margin: 20px 0;
+            font-style: italic;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            gap: 15px;
+        }
+        .contact input, .contact select, .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contact button:hover {
+            background-color: #e55a00;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+            .hero p {
+                font-size: 1.2em;
+            }
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+            .pricing-plans {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Rathore Tiffin Services</h1>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h2>Fresh, Homemade Tiffin Delivered Daily</h2>
+            <p>Enjoy nutritious lunch and dinner meals right at your doorstep. Freshly cooked with love!</p>
+            <a href="#contact" class="btn">Order Now</a>
+            <a href="#pricing" class="btn">Subscribe</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>At Rathore Tiffin Services, we are committed to providing reliable, hygienic, and healthy meals. Our focus is on daily fresh cooking using high-quality ingredients to ensure customer convenience and satisfaction. Trust us for home-cooked goodness delivered straight to you.</p>
+        <div style="background-color: #ff6600; color: #fff; padding: 20px; border-radius: 10px; margin-top: 20px;">
+            <h3>Freshly Cooked Daily - Home-cooked Meals Delivered</h3>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="placeholder-veg-meal.jpg" alt="Vegetarian Meal">
+                <h3>Vegetarian Options</h3>
+                <p>Delicious paneer dishes, dal, vegetables, and more.</p>
+            </div>
+            <div class="menu-item">
+                <img src="placeholder-nonveg-meal.jpg" alt="Non-Vegetarian Meal">
+                <h3>Non-Vegetarian Options</h3>
+                <p>Chicken, mutton, and fish curries with rice and roti.</p>
+            </div>
+            <div class="menu-item">
+                <img src="placeholder-diet-meal.jpg" alt="Diet-Friendly Meal">
+                <h3>Diet-Friendly Options</h3>
+                <p>Low-calorie, high-protein meals for health-conscious eaters.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <h2>Meal Plans & Pricing</h2>
+        <div class="pricing-plans">
+            <div class="plan">
+                <h3>Daily Plan</h3>
+                <p>Lunch + Dinner</p>
+                <ul>
+                    <li>₹150 per day</li>
+                    <li>Fresh daily delivery</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h3>Weekly Plan</h3>
+                <p>Lunch + Dinner (7 days)</p>
+                <ul>
+                    <li>₹1000 per week</li>
+                    <li>Save 10% on daily rates</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h3>Monthly Plan</h3>
+                <p>Lunch + Dinner (30 days)</p>
+                <ul>
+                    <li>₹4000 per month</li>
+                    <li>Best value, save 15%</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"Amazing food, always fresh and on time. Rathore Tiffin Services is my go-to for healthy meals!" - Priya S.</p>
+        </div>
+        <div class="testimonial">
+            <p>"The non-veg options are delicious. Highly recommend for busy professionals." - Rajesh K.</p>
+        </div>
+        <div class="testimonial">
+            <p>"Great service and hygienic packaging. Perfect for my diet plan." - Anjali M.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact & Order</h2>
+        <p>Call/WhatsApp: <a href="tel:+917982774162" style="color: #ff6600;">+91 79827 74162</a></p>
+        <p>Or place your order online below:</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone" required>
+            <select name="meal_plan" required>
+                <option value="">Select Meal Plan</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+            <input type="text" name="address" placeholder="Delivery Address" required>
+            <input type="time" name="delivery_time" placeholder="Preferred Delivery Time" required>
+            <textarea name="instructions" placeholder="Special Instructions"></textarea>
+            <button type="submit">Submit Order</button>
+        </form>
+        <p>Quick order via WhatsApp: <a href="https://wa.me/917982774162?text=Hi%20Rathore%20Tiffin,%20I%20want%20to%20place%20an%20order" class="btn">Order on WhatsApp</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Rathore Tiffin Services. All rights reserved.</p>
+        <a href="#about">About</a> | <a href="#menu">Menu</a> | <a href="#pricing">Pricing</a> | <a href="#contact">Contact</a>
+        <br>
+        Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    </footer>
+
+    <script>
+        // Simple form submission alert (for demo purposes)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Order submitted! We will contact you soon.');
+        });
+    </script>
+</body>
+</html>
